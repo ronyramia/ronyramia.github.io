@@ -1,80 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> 👍 My GitHub Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #ff6600;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333333;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    nav a:hover {
-      background-color: #575757;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background-color: rgb(255, 255, 255);
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #ff00ae;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: rgb(255, 255, 255);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Rony's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>
-     <span class="auto-type">Mathematics</span>
-    </p>
-  </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <a href="#numero">Numero</a>
-  </nav>
-  
-  <section id="about">
-    <h2> https://akshayanand2002.github.io/Akshay_P1/?utm_source=chatgpt.com#contact About Me</h2>
-    <p>Hello! I'm [Your Name], a software developer with a love for creating web apps and learning new technologies. I enjoy working on both front-end and back-end development projects.</p>
-  </section>
+    <header class="header-nav">
+        <div class="menu-toggle" onclick="toggleMenu();"></div>
+        <ul class="nav-menu">
+            <li><a href="#home" onclick="toggleMenu();">ACCUEIL</a></li>
+            <li><a href="#about" onclick="toggleMenu();">À PROPOS</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">COMPÉTENCES</a></li>
+            <li><a href="#experience" onclick="toggleMenu();">EXPÉRIENCES</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">CONTACT</a></li>
+        </ul>
+    </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Project 1:</strong> Description of project 1.</li>
-      <li><strong>Project 2:</strong> Description of pro
+    <section class="hero-section" id="home">
+        <div class="hero-text">
+            <h2>Bonjour ! Je suis <br><span class="text-gradient"> Rony Ramia.</span></h2>
+            <br>
+            <h3>Je suis Mathématicien</h3>
+            <br>
+            <a href="#about" class="button">À propos de moi</a>
+        </div>
+    </section>
 
+    <section class="about-section" id="about">
+        <div class="section-heading">
+            <h2>À propos de moi</h2>
+            <h3>Permettez-moi de me présenter.</h3>
+            <br>
+            <hr>
+            <br>
+            <br>
+        </div>
+        <div class="section-content">
+            <div class="half-width">
+                <img src="imagess/ronyy.jpg" class="profile-image">
+            </div>
+            <div class="about-text half-width">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Je suis actuellement en Master 2 de Mathématiques, parcours MANU (Modélisation et Analyse Numérique),
+                    à l’Université de Montpellier.</p>
+                <br>
+                <p>Je me spécialise dans les Équations aux Dérivées Partielles, l’analyse numérique et la modélisation
+                    mathématique.</p>
+                <br>
+                <p>Passionnépar l’aéronautique, je souhaite approfondir mes recherches dans ce domaine à travers un
+                    doctorat.</p>
+                <br>
+                <br>
+                <ul class="info-list">
+                    <li><b>Nom complet :</b>&ensp;&emsp;Rony Joseph Ramia</li>
+                    <li><b>Date de naissance :</b>&ensp; 16 octobre 1998</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="button-container">
+            <!--<a href="./test.pdf" target="_blank" class="button" download>Voir le CV</a>-->
+        </div>
+    </section>
+
+    <hr class="separator">
+    <br>
+
+    <section class="education-section" id="education">
+        <div class="section-heading">
+            <h2>Éducation</h2>
+            <p>Réalisations académiques et cours</p>
+        </div>
+
+        <div class="education-timeline">
+            <div class="edu-card">
+                <div class="edu-date"> 2023 - 2025</div>
+                <h4 class="edu-degree">Master en Mathématiques</h4>
+                <h5 class="edu-institute">Université Libanaise</h5>
+                <p class="edu-courses">
+                    Cours Pertinents : Analyse Fonctionnelle, Théorie des Distributions, Analyse Numérique et Calcul Scientifique, EPD, Problèmes d’évolution Linéaire, Théorie Spectrale.
+                </p>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-date">2020 - 2023</div>
+                <h4 class="edu-degree">Licence en Mathématiques</h4>
+                <h5 class="edu-institute">Université Libanaise</h5>
+                <p class="edu-courses">
+                    Cours Pertinents : Statistique, Fonctions Vectorielles et Intégrales Multiples, EDO, Analyse Numérique et Calcul Formel, Intégration et Analyse de Fourier, Analyse Complexe, Calcul Différentiel, Théorie de la Mesure et de l’Intégration, Méthodes Numériques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills-section">
+        <h2 style="color:white">Mes Compétences</h2>
+        <div class="skills-underline"></div>
+        <br><br>
+        <div class="skills-ladder">
+            <div class="skill-card">Matlab</div>
+            <div class="skill-card">LaTeXe</div>
+            <div class="skill-card">HTML / CSS</div>
+            <div class="skill-card">Anglais</div>
+            <div class="skill-card">Français</div>
+            <div class="skill-card">Allemand</div>
+        </div>
+    </section>
+
+
+
+    <section class="experience-section" id="experience">
+        <div class="section-heading">
+            <h2>Expérience</h2>
+            <p>Historique professionnel.</p>
+        </div>
+
+        <div class="experience-cards">
+            <div class="experience-card">
+                <div class="experience-date">2023 - 2025</div>
+                <h4 class="experience-title">Tuteur Privé</h4>
+                <p class="experience-desc">
+                    Fourniture de cours particuliers aux étudiants, offrant un accompagnement et un soutien personnalisés pour améliorer leur apprentissage et leur compréhension.
+                </p>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-date">2015 - 2017</div>
+                <h4 class="experience-title">Réparation Mécanique Automobile</h4>
+                <p class="experience-desc">
+                    BMW, Mercedes et Range Rover.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section" id="contact">
+        <div class="section-heading">
+            <h2>Contactez-moi</h2>
+            <!--<p>I'd Love To Connect With You.</p>-->
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot fa-3x"></i>
+                    <img src="imagess/location.png" alt="location" width="50">
+                </div>
+                <br>
+                <h4>Où me trouver</h4>
+                <p>France - Montpellier</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope fa-3x"></i>
+                    <img src="imagess/email.png" alt="email" width="50">
+                </div>
+                <br>
+                <h4>Envoyez-moi un email à</h4>
+                <p><a href="mailto:ronyramia4@gmail.com">ronyramia4@gmail.com</a></p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin-in fa-3x"></i>
+                    <img src="imagess/linkedin.png" alt="linkedin" width="50">
+                </div>
+                <br>
+                <h4>Entrons en contact</h4>
+                <a href="https://www.linkedin.com/in/rony-ramia/" target="_blank">Profile</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".nav-menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+    }
+</script>
