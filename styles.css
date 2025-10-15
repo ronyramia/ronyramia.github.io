@@ -71,7 +71,7 @@
     position: relative;
     min-height: 100vh;
     background-size: cover;
-    background-image: url("rm373batch13-086.jpg");
+    background-image: url("welcome.jpg");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -542,4 +542,5 @@ section {
     }
 
 }
+
 
